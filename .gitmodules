@@ -1,0 +1,6 @@
+[submodule "src/http"]
+	path = src/http
+	url = ../http
+[submodule "src/https"]
+	path = src/https
+	url = ../https
