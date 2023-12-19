@@ -23,13 +23,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # custom
+.certs
 dist
 out
 
-# bin
-# lib
-# lib32
-# lib64
-# man
+bin
+lib
+lib32
+lib64
+man
 
 # allow list
