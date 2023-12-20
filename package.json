@@ -8,13 +8,19 @@
   "workspaces": [
     "src/*"
   ],
+  "packageManager": "yarn@1.22.19",
   "scripts": {
+    "build": "tsc -p ./tsconfig.json && tsc-alias && ts-add-js-extension --dir=dist",
+    "postbuild": "cp -r ./views ./dist/views && cp -r ./public ./dist/public",
+    "rebuild": "yarn clean && yarn build",
+    "dbg": "DEBUG=http:* yarn dev",
     "start": "yarn prod",
-    "build": "yarn clean && tsc && tsc-alias && ts-add-js-extension --dir=dist",
-    "dev": "NODE_ENV=development yarn build && yarn serve:http",
-    "prod": "NODE_ENV=production yarn build && yarn serve:http",
-    "clean": "rimraf dist",
-    "wipe": "yarn clean && rimraf node_modules",
+    "restart": "yarn rebuild && yarn prod",
+    "dev": "NODE_ENV=development yarn serve:http",
+    "prod": "NODE_ENV=production yarn serve:http",
+    "serve": "node ./dist/index.js",
+    "clean": "rm -rvf ./dist",
+    "wipe": "yarn clean && rm -rvf ./node_modules",
     "gen:ssl": "./generate.sh",
     "serve:http": "node ./dist/http/index.js",
     "serve:https": "sudo node ./dist/https/index.js"
