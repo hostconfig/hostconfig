@@ -6,12 +6,16 @@
   "private": true,
   "type": "module",
   "workspaces": [
-    "src/*"
+    "src/app",
+    "src/http",
+    "src/https",
+    "src/public",
+    "src/static"
   ],
   "packageManager": "yarn@1.22.19",
   "scripts": {
     "build": "tsc -p ./tsconfig.json && tsc-alias && ts-add-js-extension --dir=dist",
-    "postbuild": "cp -r ./views ./dist/views && cp -r ./public ./dist/public",
+
     "rebuild": "yarn clean && yarn build",
     "dbg": "DEBUG=http:* yarn dev",
     "start": "yarn prod",
