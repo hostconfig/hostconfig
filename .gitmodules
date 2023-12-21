@@ -4,3 +4,6 @@
 [submodule "src/https"]
 	path = src/https
 	url = ../https
+[submodule "src/app"]
+	path = src/app
+	url = ../app
