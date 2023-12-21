@@ -7,3 +7,9 @@
 [submodule "src/app"]
 	path = src/app
 	url = ../app
+[submodule "src/public"]
+	path = src/public
+	url = ../public
+[submodule "src/static"]
+	path = src/static
+	url = ../static
