@@ -33,4 +33,7 @@ lib32
 lib64
 man
 
+deps
+
 # allow list
+!favicon.ico
