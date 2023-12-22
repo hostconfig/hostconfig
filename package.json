@@ -26,7 +26,7 @@
     "clean": "rm -rvf ./dist",
     "wipe": "yarn clean && rm -rvf ./node_modules",
     "gen:ssl": "./generate.sh",
-    "serve:http": "node ./dist/http/index.js",
-    "serve:https": "sudo node ./dist/https/index.js"
+    "serve:http": "node ./dist/http/src/index.js",
+    "serve:https": "sudo node ./dist/https/src/index.js"
   }
 }
