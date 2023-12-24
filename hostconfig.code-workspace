@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "hostconfig"
+		},
+		{
+			"path": "src/app",
+			"name": "app"
+		},
+		{
+			"path": "src/http",
+			"name": "http"
+		},
+		{
+			"path": "src/https",
+			"name": "https"
+		},
+		{
+			"path": "src/public",
+			"name": "public"
+		},
+		{
+			"path": "src/static",
+			"name": "static"
+		},
+    {
+			"path": "src/https/.certs",
+			"name": ".certs"
+		}
+	],
+	"settings": {}
+}
