@@ -13,3 +13,6 @@
 [submodule "src/static"]
 	path = src/static
 	url = ../static
+[submodule "src/modules"]
+	path = src/modules
+	url = ../modules
