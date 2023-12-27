@@ -8,6 +8,7 @@
   "workspaces": [
     "src/*"
   ],
+  "engineStrict" : false,
   "packageManager": "yarn@1.22.19",
   "scripts": {
     "build": "tsc -p ./tsconfig.json && tsc-alias && ts-add-js-extension --dir=dist",
