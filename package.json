@@ -6,11 +6,7 @@
   "private": true,
   "type": "module",
   "workspaces": [
-    "src/app",
-    "src/http",
-    "src/https",
-    "src/public",
-    "src/static"
+    "src/*"
   ],
   "packageManager": "yarn@1.22.19",
   "scripts": {
