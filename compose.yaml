@@ -34,6 +34,19 @@ services:
     #   - public
     #   - private
 
+  http2:
+    build:
+      context: src/http2
+    environment:
+      NODE_EXTRA_CA_CERTS: /etc/ssl/certs/ca-certificates.crt
+#      NODE_ENV: production
+    ports:
+      - 8443:8443
+    restart: always
+    # networks:
+    #   - public
+    #   - private
+
 # services:
 #   postgres:
 #     container_name: postgres

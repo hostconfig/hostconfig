@@ -43,6 +43,7 @@ building 0...100%
 
 http server listening on http://localhost:8080
 https server listening on https://localhost:443
+http2 server listening on https://localhost:8443
 
 $ docker compose down
 ```
@@ -57,7 +58,7 @@ Additionally, each of the 'service provider' sub-projects are designed to functi
 
 ## Further information
 
-*NOTE:* the 'https' module requires an additional build step to generate the required self-signed TLS certificates, which must also be installed in your browser and/or client - [full instructions are available in the project repository](https://github.com/hostconfig/https.git).
+*NOTE:* the 'https' and 'http2' module require an additional build step to generate the required self-signed TLS certificates, which must also be installed in your browser and/or client - [full instructions are available in the project repository](https://github.com/hostconfig/https.git).
 
 Attempting to run Docker before generating these certificates per the instructions will likely cause the Docker build to fail, because the builder attempts to copy the certificates from your local disk (where you can use them further) instead of generating them inside of the Docker environment. A shell script named 'generate.sh' is provided which will create the required certificates in a new ```.certs/``` directory. As long as this is placed at the root of the 'https' sub-module, the Docker build should succeed. Please be vigilante about the useage of self-signed certificates; these are generally only to be used for local development purposes and should not be shared publically.
 

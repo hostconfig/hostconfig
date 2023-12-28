@@ -16,6 +16,10 @@
 			"path": "src/https",
 			"name": "https"
 		},
+		{
+			"path": "src/http2",
+			"name": "http2"
+		},
     {
 			"path": "src/modules",
 			"name": "modules"

@@ -69,7 +69,7 @@ COPY --from=build /usr/src/hostconfig/dist ./dist
 
 
 # Expose the port that the application listens on.
-EXPOSE 3000 80 8080 443 5432
+EXPOSE 3000 80 8080 443 8443 5432
 
 # Run the application.
 CMD yarn start
