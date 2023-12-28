@@ -16,3 +16,6 @@
 [submodule "src/modules"]
 	path = src/modules
 	url = ../modules
+[submodule "src/http2"]
+	path = src/http2
+	url = ../http2
